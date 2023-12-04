@@ -1,0 +1,15 @@
+{
+    "name": "ifba/transportes",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Transportes\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CGGGJMR"
+        }
+    ],
+    "require": {}
+}

@@ -6,6 +6,6 @@
     <title>77Transporte</title>
 </head>
 <body>
-    <h1><?=$pagina?></h1>
+    <h1><?=$paginal?></h1>
 </body>
 </html>

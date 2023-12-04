@@ -6,6 +6,6 @@
     <title>77Transporte</title>
 </head>
 <body>
-    <h1>Criar conta</h1>
+    <h1><?=$paginac?></h1>
 </body>
 </html>

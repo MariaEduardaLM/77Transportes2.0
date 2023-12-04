@@ -1,0 +1,283 @@
+@font-face{
+	src:url("vogue.ttf");
+	font-family: "fonte";
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: arial;
+	box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    background:white;
+ }
+
+header {
+  width: 100%;
+  height: 150px;
+  background: black;
+}
+
+.content {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/*Acrescentar*/
+.conteudo{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: grey;
+}
+
+nav ul button {
+  border: 1px solid white;
+  background: transparent;
+  padding: 10px 38px;
+  cursor: pointer;
+  margin-left: 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+nav ul button:hover {
+  transition: background, color 0.6s;
+  background: grey;
+  color: white;
+}
+
+.h1duvidas{
+    font-size: 50px;
+    text-align: center;
+}
+
+.h2duvidas{
+    font-size: 30px;
+    text-align: center;
+    color:dimgray;
+}
+
+.colorunico{
+    color:black;
+    border:3px solid #ddd9dd;
+    padding:10px;
+    background-color:white;
+	border-radius:10px;	
+ }
+ .colorunico:hover{
+	color:black;
+	background-color:black;
+	transition:0.7s;
+ }
+
+.duvida{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    margin-top:30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap:wrap;
+    
+}
+.duvida button{
+    width: 500px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 7px;
+    display:flex;
+    align-items: center;    
+    justify-content: flex-start;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.duvida button:hover{
+   width: 510px;
+    height: 60px;
+    background-color: black;
+    color:white;
+}
+
+.duvida button h1{
+    font-size: 1.4em;
+    margin-left: 400px;
+}
+.pesquisa{
+    margin-left: 420px;
+    margin-top: 20px;
+}
+.pesquisa input{
+    width: 500px;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.duvidas{
+    color:black;
+    border:2px solid black;
+    padding:10px;
+    background-color:grey;
+	border-radius:10px;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 200px;	
+ }
+  .duvidas:hover{
+	color:lightblue;
+	background-color:black;
+	transition:0.7s;
+ }
+header nav ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-form{
+    width: 350px;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0, 0 , 10px rgb(0, 0, 0, 0.5);
+    background-color: aliceblue;
+}
+
+.box-form input{
+    width: 200px;
+    height:30px;
+    border-radius: 4px;
+    border:1px solid black;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+select{
+     margin-bottom: 10px;
+
+}
+
+.box-form button{
+    width: 100px;
+    height: 30px;
+    background-color: aquamarine;
+}
+
+.sub{
+    margin-left: 70px;
+}
+
+.subtitulos p{
+    margin-bottom: 20px;
+    margin-left: 550px;
+    margin-top: 5px;
+}
+footer {
+  width: 100%;
+  height: 250px;
+}
+
+footer .main {
+  width: 100%;
+  height: 200px;
+  background: black;
+  padding: 20px 10px;
+}
+
+.footer-links {
+  max-width: 1000px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-empresa,
+.footer-aluguel,
+.footer-contato,
+.footer-conectado {
+  color: white;
+  height: 100%;
+  min-height: 100px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.main .footer-conectado img {
+  width: 32px;
+  height: 32px;
+}
+
+footer .parte-baixo {
+  width: 100%;
+  height: 50px;
+  background: #c2c2c2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

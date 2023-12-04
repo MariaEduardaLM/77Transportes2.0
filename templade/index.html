@@ -1,4 +1,11 @@
-<?php componente('topo')?>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>77 Transportes</title>
+    <link rel="stylesheet" href="css/styleprin.css" />
+	<link rel="icon" href="imagens/2.png">
+  </head>
   <body>
     <header>
       <div class="content">
@@ -9,7 +16,7 @@
             <li><a href="index.html">Nossa Empresa</a></li>
             <li><a href="duvidas.html">Dúvidas</a></li>
 			<li><a href="reserva.html">Reservas</a></li>
-          <a href=<?=linkrota('login')?>>  <button>Login</button> </a>
+          <a href="cadastro.html">  <button>Login</button> </a>
           </ul>
         </nav>
         <div class="header-bloco">
@@ -19,7 +26,7 @@
               Empresa especializada em aluguel de transportes
             </p>
           </div>
-          <img src=<?=imgs('carro.webp')?> alt="Car" />
+          <img src="imagens/carro.webp" alt="Car" />
         </div>
       </div>
     </header>
@@ -35,7 +42,7 @@
         </div>
         <div class="sobre-content">
           <div class="esquerda">
-            <img src=<?=imgs('about.png')?> alt="About" />
+            <img src="imagens/about.png" alt="About" />
           </div>
           <div class="direita">
             <h3>Sobre Nós</h3>
@@ -53,5 +60,41 @@
     </section>
 
   
-  
-    <?php componente('rodape')?>
+       <footer>
+        <div class="main">
+          <div class="content footer-links">
+            <div class="footer-empresa">
+              <h4>Empresa</h4>
+              <h6>Sobre</h6>
+              <h6>Contato</h6>
+            </div>
+			
+            <div class="footer-aluguel">
+              <h4>Aluguel</h4>
+              <h6>Dirigir sozinho</h6>
+              <h6>Com motorista</h6>
+              <h6>Ajuda</h6>
+            </div>
+			
+            <div class="footer-conectado">
+              <h4>Permaneça conectado</h4>
+              <div class="social-icons">
+                <img src="imagens/instagram.png" alt="Instagram" />
+                <img src="imagens/facebook.png" alt="Facebook" />
+              </div>
+            </div>
+			
+            <div class="footer-contato">
+              <h4>Contato BR</h4>
+              <h6>+55 31 988776655</h6>
+              <h6>77transportes@gmail.com</h6>            
+            </div>
+			
+          </div>
+        </div>
+		
+        <div class="parte-baixo">77 transportes 2023 - 77 vezes mais você!</div>
+      </footer>
+    </body>
+  </body>
+</html>

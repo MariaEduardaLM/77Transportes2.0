@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>77Transporte</title>
-</head>
-<body>
-    <h1>Error 404 - Página Não Encontrada</h1>
-</body>
-</html>
+
+<?php componente('topo')?>
+<main class="header-bloco">
+    <h1>Error 404 - Página Não Encontrada</h1></main>
+</main>
+<?php componente('rodape')?>

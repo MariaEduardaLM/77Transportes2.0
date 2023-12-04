@@ -6,6 +6,6 @@
     <title>77Transporte</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Error 404 - Página Não Encontrada</h1>
 </body>
 </html>

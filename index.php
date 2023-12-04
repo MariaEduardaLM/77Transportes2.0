@@ -14,6 +14,4 @@ $url = $_GET['url'] ?? "";
 Router::add('/', "HomeController", "index");
 Router::add('/login', "LoginController", "login");
 Router::add('/cadastro', "LoginController", "criarconta");
-Router::add('__erro', "ErroController", "erro404");
- 
 Router::exec($url);

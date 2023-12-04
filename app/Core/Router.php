@@ -18,13 +18,12 @@ public static function exec(string $url){
 
     if (array_key_exists($url,$rotas)) {
     [$controller, $metodo] = $rotas[$url];
-
+    static::carregarController($controller,$metodo);
+   
     }else {
-    [$controller, $metodo] = $rotas['__erro'];
+    static::erro(404);
 
     }
-
-static::carregarController($controller,$metodo);
 
 }
 
@@ -34,8 +33,20 @@ protected static function carregarController($controller,$metodo) {
 
     
     $controller = NS_CONTROLLERS . $controller;
+    if(class_exists($controller)){
     $ctr = new $controller();
     $ctr->$metodo();
+    }else{
+        static::erro('controller');
+    }
 }
 
+
+protected static function erro(string $tipo){
+
+   $controller = NS_CONTROLLERS. 'ErroController';
+    $ctr = new $controller();
+    $ctr->erro($tipo);
+
+}
 }

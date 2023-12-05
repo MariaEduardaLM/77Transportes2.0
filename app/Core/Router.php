@@ -12,7 +12,7 @@ class Router{
 
     
 public static function exec(string $url){
-    
+
     $url = "/".$url;
     $rotas = static::$rotas;
 

@@ -1,28 +1,21 @@
-<?php 
+<?php
 
 namespace Transportes\Controllers;
 
 use Transportes\Core\Controller;
-use Transportes\Core\Database;
 use Transportes\Models\DAO\UsuariosDAO;
 use Transportes\Models\Entities\Usuario;
 
+class TesteController extends Controller{
 
-class HomeController extends Controller{
-   
-    public function index(){
-        $dados = ['titulo' => 'Transportes'];
-        $this->view('inicial', $dados);
-    }
-    
 public function teste()  {
-    $usuario = new Usuario;
-    $usuario->nome = "Marcia";
-    $usuario->email = "marcia@ifba.edu.br";
+    $usuario = new Usuario();
+    $usuario->nome = "Maria";
+    $usuario->email = "maria@ifba.edu.br";
     $usuario->login = 'maria';
     $usuario->senha = '1234';
     
-    UsuariosDAO::inserir( $usuario );
+  UsuariosDAO::inserir( $usuario );
 
 }
 
@@ -46,7 +39,7 @@ public function teste3()
 
 public function teste4()
 {
-    $usuario = UsuariosDAO::getById(4);
+    $usuario = UsuariosDAO::getById(7);
   
     $usuario->nome = "Rebecca";
     $usuario->email = "rebecca@gmail.com.br";
@@ -82,9 +75,8 @@ public function teste6()  {
         ]
     );
   echo "<pre>";
-   var_dump($usuario->getProps());
+   var_dump($usuario);
 
 }
 
 }
-

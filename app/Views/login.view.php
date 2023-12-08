@@ -22,11 +22,14 @@
 	<div>
     <a class="links" id="paracadastro"></a>
     <a class="links" id="paralogin"></a>
-    
+
+
+  <?=flash();?>
+
     <div class="container">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action=""> 
+        <form method="post" action="<?=linkrota('cadastrarconta')?>"> 
           <h1>Login</h1> 
           <p> 
             <label for="email_login">Seu e-mail</label>

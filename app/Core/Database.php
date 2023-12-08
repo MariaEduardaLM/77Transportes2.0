@@ -8,10 +8,10 @@ class Database{
 
     public function __construct()
     {
-        $servidor = "localhost";
-        $banco = "77transportes";
-        $usuario = "root";
-        $senha = "";
+        $servidor = DB['servidor'];
+        $banco = DB['banco'];
+        $usuario =DB['usuario'];
+        $senha = DB['senha']; 
         $dsn = "mysql:host={$servidor};dbname={$banco}";
         $this->conexao = new \PDO($dsn, $usuario, $senha);
 
@@ -24,5 +24,14 @@ class Database{
                 $this->stmt = $this->conexao->prepare($sql);
                 return $this->stmt->execute($dados);
                 
+    }
+
+    public function getAll(string $classe):array{
+        return $this->stmt->fetchAll(\PDO::FETCH_CLASS,$classe);
+    }
+
+    public function get(string $classe) 
+    {
+        return $this->stmt->fetchObject($classe);
     }
 }
